@@ -4,31 +4,40 @@ import TransitionText from "./TransitionText";
 import { Pill } from "lucide-react";
 
 const Hero = () => {
-  const TEXTS = ["Acupuncture", "Massage", "Chiropractor", "Dental", "Cosmentic", "Dietitian", "Speech Therapist",
-    "Occupational", "Therapist", "Acupunturist"
-  ]
+  const TEXTS = [
+    "Acupuncture",
+    "Massage",
+    "Chiropractor",
+    "Dental",
+    "Cosmentic",
+    "Dietitian",
+    "Speech Therapist",
+    "Occupational",
+    "Therapist",
+    "Acupunturist",
+  ];
   return (
-    <div className="bg-blue-950">
-    <div className="relative bg-blue-950 pb-[110px] pt-[50px] dark:bg-dark lg:pt-[50px] max-w-6xl  mx-auto">
+    <div className="bg-blue-950 ">
+      <div className="relative bg-blue-950 pb-[110px] pt-[50px] dark:bg-dark lg:pt-[50px] max-w-6xl  mx-auto">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 lg:w-6/12">
               <div className="hero-content">
-                <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-gray-50 dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl flex flex-wrap
-                items-center gap-3">
+                <h1
+                  className="mb-5 text-4xl font-bold !leading-[1.208] text-gray-50 dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl flex flex-wrap
+                items-center gap-3"
+                >
                   <span>Book your</span> {""}
-                  <TransitionText 
-                  className="text-blue-500"
-                  TEXTS={TEXTS}/>
+                  <TransitionText className="text-blue-500" TEXTS={TEXTS} />
                   <br />
                   <span>sessions now</span>
                 </h1>
                 <p className="mb-8 max-w-[480px] text-base text-gray-50 dark:text-dark-50-6">
-                  Health shouldn't be a puzzle, we are cutting through the B.S to bring you simple,
-                  affortable, and transparent healthcare.
+                  Health shouldn't be a puzzle, we are cutting through the B.S
+                  to bring you simple, affortable, and transparent healthcare.
                 </p>
                 {/* Search Bar */}
-                <SearchBox/>
+                <SearchBox />
                 {/* CTA Btn's */}
                 <ul className="flex flex-wrap items-center mt-6">
                   <li>
@@ -45,7 +54,7 @@ const Hero = () => {
                       className="inline-flex items-center justify-center px-5 py-3 text-center text-base font-medium text-gray-50 hover:text-blue-500 dark:text-white"
                     >
                       <span className="mr-2">
-                        <Pill className="flex shrink-0 h-4 w-4 text-blue-600"/>
+                        <Pill className="flex shrink-0 h-4 w-4 text-blue-600" />
                       </span>
                       Need a Refill
                     </a>
@@ -54,13 +63,15 @@ const Hero = () => {
                 <div className="py-4 pt-8 flex gap-4">
                   <div className="flex flex-col items-center justify-center">
                     <span className="font-bold text-gray-50">600</span>
-                    <span className="text-sm text-gray-400">Active Specialists</span>
-
+                    <span className="text-sm text-gray-400">
+                      Active Specialists
+                    </span>
                   </div>
                   <div className="flex flex-col items-center justify-center">
                     <span className="font-bold text-gray-50">1800+</span>
-                    <span className="text-sm text-gray-400">Active Patients</span>
-
+                    <span className="text-sm text-gray-400">
+                      Active Patients
+                    </span>
                   </div>
                 </div>
                 {/*  */}
@@ -116,13 +127,13 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      </div>
+    </div>
   );
 };
 
 export default Hero;
 
-const SingleImage = ({ href, imgSrc }: {href:string, imgSrc:string}) => {
+const SingleImage = ({ href, imgSrc }: { href: string; imgSrc: string }) => {
   return (
     <>
       <a href={href} className="flex w-full items-center justify-center">
@@ -131,6 +142,3 @@ const SingleImage = ({ href, imgSrc }: {href:string, imgSrc:string}) => {
     </>
   );
 };
-
-
-
