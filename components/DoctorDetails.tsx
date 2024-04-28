@@ -1,11 +1,12 @@
 "use client";
 import React, { useState } from "react";
+import Availability from "./Availability";
 
 export default function DoctorDetails() {
   const [isActive, setIsActive] = useState("availability");
 
   return (
-    <div className="">
+    <div>
       <div className="flex items-center justify-between">
         <button
           onClick={() => setIsActive("details")}
@@ -28,9 +29,11 @@ export default function DoctorDetails() {
           Availability
         </button>
       </div>
-      <div className="py-8 px-4">
+      <div className=" py-8 px-4">
         {isActive === "availability" ? (
-          <div>Availability Details Components</div>
+          <div>
+            <Availability/>
+          </div>
         ) : (
           <div>Service Details Components</div>
         )}

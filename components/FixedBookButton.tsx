@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button";
 export default function FixedBookButton() {
   return (
     <div
-      className="fixed bottom-0 w-full z-50 shadow-2xl py-8 px-6 rounded-md 
+      className="fixed bottom-0 w-full z-50 shadow-2xl py-8 px-6 rounded-md bg-white 
       border border-gray-200 "
     >
-      <div className="max-w-4xl mx-auto flex gap-4 items-center justify-between">
+      <div className="max-w-4xl mx-auto flex justify-between gap-4 items-center ">
         <div className="w-full">
           <p className="text-xl font-bold">$56</p>
           <p className="text-sm font-semibold">Tue, Mar 12 - 8:00 AM GMT+3</p>
